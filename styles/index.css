@@ -67,3 +67,62 @@ a{
     /*deixa as letras todas maiusculas*/
     text-transform: uppercase;
 }
+
+.section{
+    overflow: hidden;
+    padding: 0 8rem;
+    text-align: center;
+
+}
+
+.section__title{
+    margin: 4rem auto;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.section__img,
+.section__img-inline{
+    /*impede que a imagem transborde pra
+    fora da pagina */
+    width: 100%;
+
+    max-height: 30rem;
+    position: relative;
+    border-radius: 0.75rem;
+    object-fit: cover;
+    object-position: top;
+
+    /*eixo-x, eixo-y, blur(espalhar), cor */
+    box-shadow: 0 1rem 2rem -0.5rem rgba(20, 116, 180, 0.25);
+}
+
+.section__text,
+.section__text-inline{
+    /*aumenta o espaço entre uma linha e outra*/
+    line-height: 1.75rem;
+
+    font-size: 1.25rem;
+    margin: 4rem auto;
+}
+
+.section__img-inline{
+    /*faz a imagem flutuar entre a pagina*/
+    float: left;
+
+    
+    margin: 0rem 4rem 2rem 0rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem ;
+    height: 25rem;
+    width: 20rem;
+}
+
+.section__text-inline{
+    margin-top: 6rem;
+    text-align: left;
+}
+
+.section__text-inline > p{
+    margin-top: 1.5rem;
+}

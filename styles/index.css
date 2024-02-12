@@ -30,8 +30,11 @@ a{
 }
 
 .hero {
-    /**/
+    /* efeito de transição de cores muito massa ! */
+    background: linear-gradient(rgba(0,0,0,0.1),var(--color-background));
+
     position: relative;
+    min-height: 100vh ;
 }
 
 .hero__background{
@@ -46,4 +49,21 @@ a{
 
     /*permite controlar a profundidade de um elemento */
     z-index: -10 ;
+}
+
+.hero__foreground{
+    text-align: center;
+    color: var(--color-white);
+    padding-top:40vh ;
+}
+.hero__title{
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.hero__text{
+    margin-top: 2rem;
+    letter-spacing: 0.4rem;
+    /*deixa as letras todas maiusculas*/
+    text-transform: uppercase;
 }

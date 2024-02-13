@@ -26,8 +26,10 @@ body{
 
 a{
     color: var(--color-blue);
+    
 
 }
+
 
 .hero {
     /* efeito de transição de cores muito massa ! */
@@ -126,3 +128,79 @@ a{
 .section__text-inline > p{
     margin-top: 1.5rem;
 }
+
+section#hangouts img{
+    object-position: center;
+}
+
+.gallery__img{
+    object-fit: cover;
+    width: 16rem;
+    height: 16rem;
+    border-radius: .75rem;
+
+    /*permiote aplicar efeitos unicos de 
+    tranformar os objetos */
+    transform: rotate(-2deg);
+}
+.gallery__img-wrapper{
+    display: inline-block;
+    position: relative;
+}
+.gallery__img-wrapper + .gallery__img-wrapper{
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+/* selecionando os numeros pares da "lista de imagens"*/
+.gallery__img-wrapper:nth-child(even) > .gallery__img{
+    top: 1rem;
+    transform: rotate(2deg);
+}
+
+/*criando elementos dentro das imagens */
+.gallery__img-wrapper::after {
+    content: "";
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: rgb(228, 26, 26);
+    border-radius: 1000px;
+    position: absolute;
+    top: 0.25rem;
+    right: 1rem;
+}
+.gallery__img-wrapper:nth-child(even)::after{
+    left: 1rem;
+   
+}
+
+.footer{
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+/* Estilo padrão do link */
+#icaropaixao {
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    color: var(--color-blue); /* Cor do texto do link */
+    transition: border-bottom 0.3s ease; /* Adiciona uma transição suave ao efeito */
+    position: relative; /* Permite posicionar o pseudo-elemento ::after de acordo com o link pai */
+  }
+  
+  /* Efeito de sublinhado ao passar o mouse */
+  #icaropaixao:hover {
+    border-bottom: 2px solid #007bff; /* Adiciona um sublinhado de 2 pixels quando o mouse passa sobre o link */
+  }
+  
+  /* Estilo do sublinhado - pseudo-elemento ::after */
+  #icaropaixao::after {
+    content: ""; /* Adiciona um conteúdo vazio para o pseudo-elemento */
+    position: absolute; /* Posiciona o pseudo-elemento de forma absoluta em relação ao link pai */
+    left: 0; /* Alinha o pseudo-elemento à esquerda do link pai */
+    right: 0; /* Alinha o pseudo-elemento à direita do link pai */
+    bottom: -4px; /* Coloca o pseudo-elemento 2 pixels abaixo do link pai (correspondente à altura do sublinhado) */
+    border-bottom: 4px solid transparent; /* Define um sublinhado transparente inicialmente */
+    transition: border-bottom 0.1s ease; /* Adiciona uma transição suave ao efeito do sublinhado */
+  }

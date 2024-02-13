@@ -9,7 +9,14 @@ Abaixo segue o link do projeto para voçê visualizar
 
 ![SealProject](https://github.com/icaropaixao/Site-Projeto-SealWorld/blob/main/exemple.png?raw=true)
 
-# Contato :
-# icaroreis1982@gmail.com
-# linkedin:
-[Icaroreis](https://www.linkedin.com/in/%C3%ADcaro-reis-970a1221a/)
+ ## Tecnologias 🤖 :
+
+ - HTML5
+
+ - CSS3
+
+ - GITHUB
+
+ # 💻 Contato 
+
+ @icaroreis1982@gmail.com

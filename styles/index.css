@@ -191,7 +191,7 @@ section#hangouts img{
   
   /* Efeito de sublinhado ao passar o mouse */
   #icaropaixao:hover {
-    border-bottom: 2px solid #007bff; /* Adiciona um sublinhado de 2 pixels quando o mouse passa sobre o link */
+    border-bottom: 2px solid var(--color-blue); /* Adiciona um sublinhado de 2 pixels quando o mouse passa sobre o link */
   }
   
   /* Estilo do sublinhado - pseudo-elemento ::after */

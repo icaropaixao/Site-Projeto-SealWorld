@@ -1,2 +1,7 @@
-# Site-Projeto-SealWorld
- Site criado para treinar e aperfeiçoar minhas habilidades com HTML5 e CSS3
+# PROJETO SEAL WORLD
+
+## Descrição
+LandingPage divertida criada somente para treinar minhas habilidades com CSS3 e HTML5.
+
+Abaixo segue o link do projeto para voçê visualizar
+
